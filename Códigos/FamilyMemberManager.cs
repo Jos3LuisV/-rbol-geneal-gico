@@ -464,7 +464,7 @@ public List<Location> predefinedLocations = new List<Location> // Ubicaciones pr
         }
     }
 
-    private IEnumerator LoadImage(string filePath)
+    private IEnumerator LoadImage(string filePath) //Para cargar la imagen
     {
         if (!File.Exists(filePath))
         {
@@ -515,7 +515,7 @@ public List<Location> predefinedLocations = new List<Location> // Ubicaciones pr
         yield return null;
     }
 
-    private Texture2D LoadPNG(string filePath)
+    private Texture2D LoadPNG(string filePath) //Para la imagen
     {
         try
         {
@@ -534,7 +534,7 @@ public List<Location> predefinedLocations = new List<Location> // Ubicaciones pr
         return null;
     }
 
-    public void SaveFamilyMember()
+    public void SaveFamilyMember() //Para guardar los nuevos miembros
     {
         if (string.IsNullOrEmpty(nameInput.text) ||
             string.IsNullOrEmpty(idInput.text) ||
@@ -677,7 +677,7 @@ public List<Location> predefinedLocations = new List<Location> // Ubicaciones pr
         }
     }
 
-    private void ConnectToMembersWithRoles(FamilyMember member, List<FamilyRole> targetRoles)
+    private void ConnectToMembersWithRoles(FamilyMember member, List<FamilyRole> targetRoles) //Conectarlos con los roles
     {
         foreach (var targetMember in familyMembers)
         {
@@ -1334,4 +1334,5 @@ public List<Location> predefinedLocations = new List<Location> // Ubicaciones pr
         photoPreview.texture = null;
         currentPhoto = null;
     }
+
 }
