@@ -1,1 +1,0 @@
-# -rbol-geneal-gico
