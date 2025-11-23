@@ -3,11 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
-
-public class Menú : MonoBehaviour
+//Para cambiar de escenas
+public class MenÃº : MonoBehaviour
 {
     public void CambiarEscena(string nombre)
     {
         SceneManager.LoadScene(nombre);
     }
 }
+
