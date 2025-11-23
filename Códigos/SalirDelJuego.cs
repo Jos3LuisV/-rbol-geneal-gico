@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+//Para cerrar totalmente el programa
 public class SalirDelJuego : MonoBehaviour
 {
     public void CerrarJuego()
@@ -12,3 +13,4 @@ public class SalirDelJuego : MonoBehaviour
 #endif
     }
 }
+
